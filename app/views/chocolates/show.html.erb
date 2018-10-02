@@ -1,0 +1,6 @@
+<h1><%= @chocolates.name %></h1>
+<h3><%= @chocolates.choc_type %></h3>
+<h3><%= @chocolates.cost %></h3>
+<%= link_to 'Edit', edit_chocolate_path %>
+<%= link_to 'Delete', @chocolates, method: :delete %>
+<%= link_to 'Back', chocolates_path %>
