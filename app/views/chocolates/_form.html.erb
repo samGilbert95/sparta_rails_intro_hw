@@ -1,0 +1,15 @@
+<%= form_with(model: chocolate, local: true) do |form| %>
+<div>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+</div>
+<div>
+  <%= form.label :choc_type %>
+  <%= form.text_field :choc_type %>
+</div>
+<div>
+  <%= form.label :cost %>
+  <%= form.number_field :cost %>
+</div>
+<%= form.submit %>
+<% end %>

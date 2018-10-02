@@ -1,0 +1,9 @@
+
+<h1>Welcome to the chocolate shop</h1>
+
+<% @chocolates.each do |chocolate|%>
+<h4><%= chocolate.name %></h4>
+<h4><%= chocolate.choc_type %></h4>
+<h4><%= chocolate.cost %></h4>
+<%= link_to 'Show', chocolate_path(chocolate)%>
+<% end %>
